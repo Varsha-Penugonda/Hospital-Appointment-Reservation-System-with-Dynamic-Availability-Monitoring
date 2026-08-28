@@ -3,10 +3,6 @@ name: Architecture Check
 on:
   pull_request:
 
-permissions:
-  contents: read
-  pull-requests: write
-
 jobs:
   architecture:
     runs-on: ubuntu-latest
@@ -17,3 +13,4 @@ jobs:
       - uses: builditwithgk/repo-cartographer@v1
         with:
           path: .
+          level: high
