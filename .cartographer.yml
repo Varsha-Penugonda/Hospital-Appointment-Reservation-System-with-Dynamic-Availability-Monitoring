@@ -1,0 +1,7 @@
+rules:
+  forbidden:
+    - from: "src/main/**"
+      to: "src/repository/**"
+      reason: "Controllers should access the database only through the service layer."
+
+  cycles: error
